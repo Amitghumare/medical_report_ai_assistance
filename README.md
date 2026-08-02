@@ -70,15 +70,15 @@ Upload a report and click **Analyze Report**.
 ## Project structure
 ```
 medical_report_ai_assistant/
-├── app.py                    # Streamlit UI, orchestrates the 5-step pipeline
+├── app.py                    
 ├── utils/
-│   ├── extractor.py          # Step 2: OCR / PDF text extraction
-│   ├── analyzer.py           # Step 3: lab value parsing + abnormality flags
-│   ├── summarizer.py         # Step 4: LangChain + OpenAI summary generation
-│   ├── report_builder.py     # Step 5: PDF report generation
-│   └── reference_ranges.py   # Reference ranges for supported lab tests
-├── .streamlit/config.toml    # Theme
-├── .env.example              # Copy to .env and add your OpenAI key
+│   ├── extractor.py         
+│   ├── analyzer.py           
+│   ├── summarizer.py         
+│   ├── report_builder.py     
+│   └── reference_ranges.py   
+├── .streamlit/config.toml    
+├── .env.example              
 ├── requirements.txt
 └── README.md
 ```
